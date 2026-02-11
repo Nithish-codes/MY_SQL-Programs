@@ -1,15 +1,19 @@
 CREATE DATABASE IF NOT EXISTS db5;
 USE db5;
 
--- Creating Department table
+SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS Department;
+DROP TABLE IF EXISTS Employee;
+SET FOREIGN_KEY_CHECKS = 1;
+
+-- Creating Department table
 CREATE TABLE Department (
     DeptID INT PRIMARY KEY,
     DeptName VARCHAR(50)
 );
 
 -- Creating Employee table
-DROP TABLE IF EXISTS Employee;
+
 CREATE TABLE Employee (
     EmpID INT PRIMARY KEY,
     Name VARCHAR(100),
