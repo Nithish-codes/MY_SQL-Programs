@@ -4,7 +4,7 @@ use db1;
 
 -- Creating the Students table
 drop table if exists Student;
-CREATE TABLE Students (
+CREATE TABLE Student(
     StudentID INT PRIMARY KEY,
     Name VARCHAR(50) NOT NULL,
     Age INT CHECK (Age >= 18),
