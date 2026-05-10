@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Firebase Task Manager</title>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+<style>
+body{
+font-family: Arial;
+margin:40px;
+background:#f5f5f5;
+}
+
+h1{
+text-align:center;
+}
+
+input,select,button{
+padding:8px;
+margin:5px;
+}
+
+.task{
+background:white;
+padding:10px;
+margin:10px;
+border-radius:5px;
+box-shadow:0 0 5px gray;
+}
+
+.completed{
+text-decoration: line-through;
+color:gray;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Realtime Task Manager</h1>
+
+<input type="text" id="taskInput" placeholder="Enter Task">
+
+<input type="text" id="userInput" placeholder="Assign User">
+
+<select id="priority">
+<option>High</option>
+<option>Medium</option>
+<option>Low</option>
+</select>
+
+<button onclick="addTask()">Add Task</button>
+
+<br><br>
+
+<input type="text" id="searchBox" placeholder="Search task" onkeyup="searchTask()">
+
+<div id="taskList"></div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
