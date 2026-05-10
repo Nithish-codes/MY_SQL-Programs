@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Firebase Chat App</title>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+<style>
+
+body{
+font-family: Arial;
+background:#f0f0f0;
+margin:40px;
+}
+
+h1{
+text-align:center;
+}
+
+#chatBox{
+width:100%;
+height:300px;
+overflow-y:scroll;
+background:white;
+padding:10px;
+border:1px solid #ccc;
+}
+
+.message{
+margin:5px;
+padding:5px;
+border-bottom:1px solid #eee;
+}
+
+input{
+padding:8px;
+margin:5px;
+}
+
+button{
+padding:8px 15px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Realtime Chat Application</h1>
+
+<input type="text" id="username" placeholder="Enter username">
+
+<div id="chatBox"></div>
+
+<input type="text" id="message" placeholder="Enter message">
+<button onclick="sendMessage()">Send</button>
+
+<script src="app.js"></script>
+
+</body>
+</html>
