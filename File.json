@@ -1,0 +1,63 @@
+db.orders.insertMany([
+{
+  order_id:1,
+  customer:{
+    customer_id:"C101",
+    name:"Rahul",
+    email:"rahul@gmail.com",
+    phone:"9876543210"
+  },
+  order_date:"2026-05-10",
+  items:[
+    {
+      product_id:"P101",
+      product_name:"Laptop",
+      price:60000,
+      quantity:1
+    },
+    {
+      product_id:"P102",
+      product_name:"Mouse",
+      price:500,
+      quantity:2
+    }
+  ],
+  total_amount:61000,
+  shipping_address:{
+    city:"Chennai",
+    pincode:600001
+  },
+  status:"Shipped"
+},
+
+{
+  order_id:2,
+  customer:{
+    customer_id:"C102",
+    name:"Anita",
+    email:"anita@gmail.com",
+    phone:"9876543211"
+  },
+  order_date:"2026-05-11",
+  items:[
+    {
+      product_id:"P103",
+      product_name:"Mobile",
+      price:20000,
+      quantity:1
+    },
+    {
+      product_id:"P104",
+      product_name:"Headphones",
+      price:2000,
+      quantity:1
+    }
+  ],
+  total_amount:22000,
+  shipping_address:{
+    city:"Delhi",
+    pincode:110001
+  },
+  status:"Processing"
+}
+])
